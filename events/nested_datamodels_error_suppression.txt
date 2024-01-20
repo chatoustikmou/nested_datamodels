@@ -1,0 +1,29 @@
+﻿namespace = nested_datamodels_error_suppression
+
+nested_datamodels_error_suppression.0001 = {
+	hidden = yes
+	orphan = yes
+
+	trigger = {
+		
+	}
+
+	immediate = {	
+		fix_variable_error = { X = outer_model }
+		fix_variable_error = { X = key }
+		fix_variable_error = { X = index }
+
+		fix_variable_error = { X = area_1 }
+		fix_variable_error = { X = area_2 }
+		fix_variable_error = { X = area_3 }
+		
+		fix_variable_error = { X = item_1_1 }
+		fix_variable_error = { X = item_1_2 }
+		fix_variable_error = { X = item_1_3 }
+		fix_variable_error = { X = item_2_1 }
+		fix_variable_error = { X = item_2_2 }
+		fix_variable_error = { X = item_2_3 }
+		fix_variable_error = { X = item_3_1 }
+		fix_variable_error = { X = item_3_2 }
+	}
+}

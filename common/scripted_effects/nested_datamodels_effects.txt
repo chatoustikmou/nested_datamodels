@@ -1,4 +1,12 @@
-﻿setup_item = {
+﻿fix_variable_error = {
+  if = {
+    limit = { has_variable = $X$ var:$X$ = flag:$X$ exists = scope:$X$ scope:$X$ = flag:$X$ }
+    set_variable = { name = $X$ value = flag:$X$ }
+  }
+  save_scope_as = $X$
+}
+
+setup_item = {
 	create_story = {
 		type = inner_model
 		save_scope_as = item
