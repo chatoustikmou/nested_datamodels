@@ -1,0 +1,20 @@
+﻿on_game_start = {
+	on_actions = {
+		nested_datamodel_setup
+	}
+}
+
+nested_datamodel_setup = {
+	effect = {
+		random_ruler = {
+			setup_item = { OUTER_MODEL = area_1 KEY = item_1_1 INDEX = 1 }
+			setup_item = { OUTER_MODEL = area_1 KEY = item_1_2 INDEX = 2 }
+			setup_item = { OUTER_MODEL = area_1 KEY = item_1_3 INDEX = 3 }
+			setup_item = { OUTER_MODEL = area_2 KEY = item_2_1 INDEX = 1 }
+			setup_item = { OUTER_MODEL = area_2 KEY = item_2_2 INDEX = 2 }
+			setup_item = { OUTER_MODEL = area_2 KEY = item_2_3 INDEX = 3 }
+			setup_item = { OUTER_MODEL = area_3 KEY = item_3_1 INDEX = 1 }
+			setup_item = { OUTER_MODEL = area_3 KEY = item_3_2 INDEX = 2 }
+		}
+	}
+}

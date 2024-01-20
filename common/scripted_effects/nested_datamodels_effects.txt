@@ -1,0 +1,32 @@
+﻿setup_item = {
+	create_story = {
+		type = inner_model
+		save_scope_as = item
+	}
+	add_to_global_variable_list = {
+		name = $OUTER_MODEL$
+		target = scope:item
+	}
+	save_scope_value_as = {
+		name = outer_model_item
+		value = flag:$OUTER_MODEL$
+	}
+	add_to_global_variable_list = {
+		name = outer_model
+		target = scope:outer_model_item
+	}
+	scope:item = {
+		set_variable = {
+			name = outer_model
+			value = flag:$OUTER_MODEL$
+		}
+		set_variable = {
+			name = index
+			value = $INDEX$
+		}
+		set_variable = {
+			name = key
+			value = flag:$KEY$
+		}
+	}
+}

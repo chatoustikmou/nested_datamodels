@@ -1,0 +1,31 @@
+window = {
+	name = "nested_datamodels_widget"
+	# datacontext = "[Culture.GetReformation]"
+	widgetid = "culture_window_id"
+	layer = windows_layer
+	movable = no
+    
+	using = Window_Size_Sidebar
+	using = Window_Background_Sidebar
+
+    hbox = {
+        datamodel = "[GetGlobalList('outer_model')]"
+        item = {
+            vbox = {
+                text_single = {
+                    text = "[Scope.GetFlagName]"
+                }
+                vbox = {
+                    datamodel = "[GetGlobalList(Scope.GetFlagName)]"
+                    item = {
+                        container = {
+                            text_single = {
+                                text = "[Scope.Var('key').GetFlagName]"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
