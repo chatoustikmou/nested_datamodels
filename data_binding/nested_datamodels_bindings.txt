@@ -1,0 +1,23 @@
+﻿macro = {
+	description = "Get the key of the item in the outer datamodel"
+	definition = "GetOuterModelKey"
+	replace_with = "Scope.GetFlagName"
+}
+
+macro = {
+	description = "Get the name of the item in the outer datamodel"
+	definition = "GetOuterModelName"
+	replace_with = "Localize(Concatenate(GetOuterModelKey,'_name'))"
+}
+
+macro = {
+	description = "Get the key of the item in the nested datamodel"
+	definition = "GetItemKey"
+	replace_with = "Scope.Var('key').GetFlagName"
+}
+
+macro = {
+	description = "Get the name of the item in the nested datamodel"
+	definition = "GetItemName"
+	replace_with = "Localize(Concatenate(GetItemKey,'_name'))"
+}

@@ -13,14 +13,14 @@ window = {
         item = {
             vbox = {
                 text_single = {
-                    text = "[Localize(Concatenate(Scope.GetFlagName,'_name'))]"
+                    text = "[GetOuterModelName]"
                 }
                 vbox = {
                     datamodel = "[GetGlobalList(Scope.GetFlagName)]"
                     item = {
                         container = {
                             text_single = {
-                                text = "[Localize(Concatenate(Scope.Var('key').GetFlagName,'_name'))]"
+                                text = "[GetItemName]"
                             }
                         }
                     }
